@@ -35,7 +35,7 @@ export const options = {
 
   
   function BarChart({teams}) {
-    const labels = Object.keys(teams);
+    const labels = Object.keys(teams).map(t => t.split(" ").map(tt => tt[0]).join(""));
     
     const data = {
         labels,
