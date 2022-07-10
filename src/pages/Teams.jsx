@@ -134,7 +134,7 @@ function Teams() {
                                         key={index} 
                                         className='flex justify-between items-center w-full sm:text-lg lg:text-2xl hover:bg-slate-700 hover:bg-opacity-60 bg-gray-800 bg-opacity-80 shadow rounded-xl py-3 cursor-pointer px-4'>
                                         <div>{team}</div>
-                                        <img className='w-10 h-10 sm:h-16 object-contain' src="/assets/IPL-LOGO.png" alt="" />
+                                        <img className='w-10 h-10 sm:h-16 object-contain' src="/assets/IPL-Logo.png" alt="" />
                                     </motion.div>
                                 </Link>
                             ))

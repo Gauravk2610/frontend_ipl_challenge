@@ -1,6 +1,8 @@
 # IPL Frontend Challenge
 
 This project was built with react js [React App](https://github.com/facebook/create-react-app)
+
+Deployed on vercel https://frontend-ipl-challenge.vercel.app/ 
 ## Libraries used
 
 - Tailwind Css - for styling, to reduce the time to write different css file
