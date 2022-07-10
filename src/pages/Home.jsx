@@ -139,11 +139,11 @@ function Home() {
                     </div>
                     {/* Top 5 */}
                     <div className='my-4 bg-gray-800 h-fit bg-opacity-60 shadow py-2 px-4 rounded-xl'>
-                        <div className='text-md sm:text-2xl'>Top 5 Rankings</div>
+                        <div className='text-xl sm:text-2xl'>Top 5 Rankings</div>
                         <ul className='my-4'>
                             {
                                 top5?.map((items, index) => (
-                                    <li key={index} className='flex space-x-2 py-2 px-4 rounded-xl transition-all duration-200 cursor-pointer text-xl hover:bg-slate-700 hover:bg-opacity-60'><span>{index+1}.</span><span>{items[0]}</span></li>
+                                    <li key={index} className='flex space-x-2 py-2 px-4 rounded-xl transition-all duration-200 cursor-pointer text-lg sm:text-xl hover:bg-slate-700 hover:bg-opacity-60'><span>{index+1}.</span><span>{items[0]}</span></li>
                                 ))
 
                             }
