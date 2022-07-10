@@ -134,7 +134,7 @@ function Home() {
                                 <div className='text-md sm:text-2xl'>Winner</div>
                                 <div className='text-xl'>{top5?.length > 0 && top5[0][0]}</div>
                             </div>
-                            <img className='w-16 h-20 object-contain' src="https://www.freeiconspng.com/uploads/crown-png-32.png" alt="" />
+                            <img className='w-8 sm:w-16 h-20 object-contain' src="https://www.freeiconspng.com/uploads/crown-png-32.png" alt="" />
                         </div>
                     </div>
                     {/* Top 5 */}
