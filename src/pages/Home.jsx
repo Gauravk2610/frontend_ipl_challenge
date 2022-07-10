@@ -143,7 +143,7 @@ function Home() {
                         <ul className='my-4'>
                             {
                                 top5?.map((items, index) => (
-                                    <li className='flex space-x-2 py-2 px-4 rounded-xl transition-all duration-200 cursor-pointer text-xl hover:bg-slate-700 hover:bg-opacity-60'><span>{index+1}.</span><span>{items[0]}</span></li>
+                                    <li key={index} className='flex space-x-2 py-2 px-4 rounded-xl transition-all duration-200 cursor-pointer text-xl hover:bg-slate-700 hover:bg-opacity-60'><span>{index+1}.</span><span>{items[0]}</span></li>
                                 ))
 
                             }

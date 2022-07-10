@@ -120,7 +120,7 @@ function Teams() {
                         className='grid sm:grid-cols-2 gap-4 my-4'>
                         {
                             teams.map((team, index) => (
-                                <Link to={`/team/${team}`} >
+                                <Link key={index} to={`/team/${team}`} >
                                     <motion.div 
                                         initial={{
                                             y: 50,
