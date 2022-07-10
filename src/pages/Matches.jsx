@@ -4,6 +4,32 @@ import Header from '../components/Header'
 import { motion } from 'framer-motion'
 import Papa from 'papaparse'
 
+const variants = {
+    open: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+    },
+    closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 }
+    }
+  };
+  
+  const livariants = {
+    open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        y: { stiffness: 1000, velocity: -100 }
+      }
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
+      transition: {
+        y: { stiffness: 1000 }
+      }
+    }
+  };
+
 function Matches() {
 
     const [year, setYear] = useState(2008)
@@ -70,28 +96,44 @@ function Matches() {
             {/* Total Matches */}
             <div className='text-2xl mt-4'>Total Matches: {matches.length}</div>
             {/* All the Matches */}
-            {
-                matches.map((match, index) => (
-                    <div key={index} className='bg-gray-800 shadow bg-opacity-80 py-2 px-4 rounded-xl my-4'>
-                        <div className='flex flex-col sm:flex-row sm:items-center sm:space-x-2 justify-between'>
-                            <div className='text-2xl'>{match.team1.split(" ").map(t => t[0])} VS {match.team2.split(" ").map(t => t[0])}</div>
-                            <div>Won by: {match.winner.split(" ").map(t => t[0])}</div>
-                        </div>
-                        <div className='flex flex-col sm:flex-row sm:space-x-2 sm:items-center justify-between'>
-                            <div>Date: {match.date}</div>
-                            <div>Player of match: {match.player_of_match}</div>
-                        </div>
-                        <div className='flex flex-col sm:flex-row sm:space-x-2 sm:items-center'>
-                            <div>Win by Runs: {match.win_by_runs}</div>
-                            <div>Win by Wickets: {match.win_by_wickets}</div>
-                        </div>
-                        <div className='flex flex-col sm:flex-row sm:space-x-2 justify-between sm:items-center'>
-                            <div>Venue: {match.venue}</div>
-                            <div>City: {match.city}</div>
-                        </div>
-                    </div>
-                ))
-            }
+            <motion.div
+                animate="open"
+                exit={"closed"}
+                variants={variants}
+            >
+                {
+                    matches.map((match, index) => (
+                        <motion.div 
+                            initial={{
+                                y: 50,
+                                opacity: 0,
+                                transition: {
+                                y: { stiffness: 1000 }
+                                }
+                            }}
+                            variants={livariants}
+                            key={index} 
+                            className='bg-gray-800 shadow bg-opacity-80 py-2 px-4 rounded-xl my-4'>
+                            <div className='flex flex-col sm:flex-row sm:items-center sm:space-x-2 justify-between'>
+                                <div className='text-2xl'>{match.team1.split(" ").map(t => t[0])} VS {match.team2.split(" ").map(t => t[0])}</div>
+                                <div>Won by: {match.winner.split(" ").map(t => t[0])}</div>
+                            </div>
+                            <div className='flex flex-col sm:flex-row sm:space-x-2 sm:items-center justify-between'>
+                                <div>Date: {match.date}</div>
+                                <div>Player of match: {match.player_of_match}</div>
+                            </div>
+                            <div className='flex flex-col sm:flex-row sm:space-x-2 sm:items-center'>
+                                <div>Win by Runs: {match.win_by_runs}</div>
+                                <div>Win by Wickets: {match.win_by_wickets}</div>
+                            </div>
+                            <div className='flex flex-col sm:flex-row sm:space-x-2 justify-between sm:items-center'>
+                                <div>Venue: {match.venue}</div>
+                                <div>City: {match.city}</div>
+                            </div>
+                        </motion.div>
+                    ))
+                }
+            </motion.div>
         </div>
     </div>
   )
