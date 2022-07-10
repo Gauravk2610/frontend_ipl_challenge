@@ -124,14 +124,14 @@ function Home() {
                     <div className=' grid grid-cols-2 gap-4'>
                         <div className='bg-gray-800 h-fit flex items-center justify-between  py-2 px-4 rounded-xl w-full bg-opacity-60 shadow'>
                             <div>
-                                <div className='text-2xl'>Total Matches</div>
+                                <div className='text-md sm:text-2xl'>Total Matches</div>
                                 <div className='text-4xl'>{matches.length}</div>
                             </div>
                             <img className='w-10 h-20 object-contain' src="/assets/IPL-Logo.png" alt="" />
                         </div>
                         <div className='bg-gray-800 h-fit flex items-center justify-between  py-2 px-4 rounded-xl w-full bg-opacity-60 shadow'>
                             <div>
-                                <div className='text-2xl'>Winner</div>
+                                <div className='text-md sm:text-2xl'>Winner</div>
                                 <div className='text-xl'>{top5?.length > 0 && top5[0][0]}</div>
                             </div>
                             <img className='w-16 h-20 object-contain' src="https://www.freeiconspng.com/uploads/crown-png-32.png" alt="" />
@@ -139,7 +139,7 @@ function Home() {
                     </div>
                     {/* Top 5 */}
                     <div className='my-4 bg-gray-800 h-fit bg-opacity-60 shadow py-2 px-4 rounded-xl'>
-                        <div className='text-2xl'>Top 5 Rankings</div>
+                        <div className='text-md sm:text-2xl'>Top 5 Rankings</div>
                         <ul className='my-4'>
                             {
                                 top5?.map((items, index) => (
