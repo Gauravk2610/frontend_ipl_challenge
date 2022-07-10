@@ -57,7 +57,7 @@ export const options = {
 
     console.log(Object.values(teams).map((team) => (team.win)))
   return (
-    <div className='bg-gray-800 mx-4 px-4 py-2 rounded-xl bg-opacity-60 my-5 shadow'>
+    <div className='bg-gray-800 px-4 py-2 rounded-xl bg-opacity-60 my-5 shadow'>
         <Bar options={options} data={data} />
     </div>
   )
