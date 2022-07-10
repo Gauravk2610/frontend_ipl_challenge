@@ -17,6 +17,9 @@ Deployed on vercel https://frontend-ipl-challenge.vercel.app/
 ## Bonus Points
 - React Js - Built using react js because of dyanmic updates and the use of hooks and clean up functions 
 - Mobile Responsive - Implmented. The site is completely mobile responsive and fit all the screen sizes
+- Progressive Web App (PWA) - Implemented. SPA (Single Page) functionalities is been implemented inside it to avoid the page refresh on new url making it dynamic
+- Offline Usable - Implemented. As the csv file is been stored on the server side it becomes easy and quick to access the db and load the data from it so no need of any third party api to implemented. 
+- Optitmize loading time -  Implemented. As we have build are webs app using react js we have swicthed to client side rendering to make it more dynamic we make use of async call to make it asynchrnous. Low resoultion images to make it load quickly even to optimize that we can make use of progreesime image package which loads the low resoltuion image and once the high resolution image is loaded we replace it with the low resoltuion one
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
