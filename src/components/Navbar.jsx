@@ -112,7 +112,7 @@ function Navbar() {
             className='fixed md:!relative shadow py-4 px-4 backdrop-blur-sm md:backdrop-blur-0 bg-gray-800 bg-opacity-80 md:bg-opacity-60 w-64 rounded-xl  h-full overflow-auto'>
             <div className='flex justify-between items-center space-x-2 mb-1'>
               <div className='flex items-center space-x-2'>
-                <img className='w-auto h-12 object-contain' src="/assets/IPL-LOGO.png" alt="" />
+                <img className='w-auto h-12 object-contain' src="/assets/IPL-Logo.png" alt="" />
                 <span className='text-3xl '>IPL</span>
               </div>
               <XIcon onClick={() => setIsOpen(false)} className='w-7 md:hidden cursor-pointer' />

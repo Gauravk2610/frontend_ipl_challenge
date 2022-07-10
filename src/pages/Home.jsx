@@ -127,7 +127,7 @@ function Home() {
                                 <div className='text-2xl'>Total Matches</div>
                                 <div className='text-4xl'>{matches.length}</div>
                             </div>
-                            <img className='w-10 h-20 object-contain' src="/assets/Ipl-Logo.png" alt="" />
+                            <img className='w-10 h-20 object-contain' src="/assets/IPL-Logo.png" alt="" />
                         </div>
                         <div className='bg-gray-800 h-fit flex items-center justify-between  py-2 px-4 rounded-xl w-full bg-opacity-60 shadow'>
                             <div>

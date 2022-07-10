@@ -1,3 +1,20 @@
+# IPL Frontend Challenge
+
+This project was built with react js [React App](https://github.com/facebook/create-react-app)
+## Libraries used
+
+- Tailwind Css - for styling, to reduce the time to write different css file
+- Framer Motion - for animations and transition effects
+- Heroicons - for icons
+- Papaparse - for parsing csv file
+- React Router Dom -  for dynamic routing in web also adding PWA to implement SPA(Single Page Application 
+- Chart Js - for making chartjs
+- React ChartJs 2 - for adding support to chart js
+- Recoil - for global state management
+
+## Bonus Points
+- React Js - Built using react js because of dyanmic updates and the use of hooks and clean up functions 
+- Mobile Responsive - Implmented. The site is completely mobile responsive and fit all the screen sizes
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
