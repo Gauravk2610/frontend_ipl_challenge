@@ -95,7 +95,7 @@ function Teams() {
                     className='mt-4'>
                     {/* Heading */}
                     <div className='flex justify-between'>
-                        <div className='text-4xl'>Indian Premier League</div>
+                        <div className='text-xl sm:text-4xl'>Indian Premier League</div>
                         <div className='flex items-center space-x-2'>
                             <CalendarIcon className='w-7 h-7' />
                             <motion.select 
